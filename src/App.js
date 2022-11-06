@@ -1,11 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-// css 파일 불러오기
+// 외부 css 파일 불러오기
 import './test.css';
+import App2 from './App2';
+import Ex1 from './compo/ex1';
+import Ex2 from './compo/ex2';
 
 function App() {
 
   const name = '새봄';
+
+  const data = "ex1";
 
   // return 안에 사용자 정의태그 구조를 작성 할 수있다!
   return (
@@ -19,6 +24,8 @@ function App() {
       {/* 변수를 사용할 때는 {변수명} 으로 사용! */}
       {/* name에 있는 값이 새봄 -> 내이름은 새봄 출력, 다른이름이라면 은찬 출력 */}
       <h1>내이름은 {name == '새봄' ? name : '은찬'}</h1>
+      <App2></App2>
+      {data == 'ex1' ? <Ex1></Ex1> : <Ex2></Ex2>}
     </>
   );
 }
