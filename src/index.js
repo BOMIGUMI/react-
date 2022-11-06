@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // App.js에서 App이라는 사용자정의태그(컴포넌트)를 불러와 여기에서 사용하겠다.
 import App from './App';
+// App2.js에서 App2라는 사용자정의태그(컴포넌트)를 불러와 여기에서 사용하겠다.
+import App2 from './App2';
 import reportWebVitals from './reportWebVitals';
 
 // document.getElementById('root') => document에서 id가 root인것을 가져오기
@@ -13,7 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // 여러가지 태그들을 App이라는 이름으로 정의되어있음 -> App.js에 정의되어 있음
 root.render(
   <React.StrictMode>
-    <App />
+    <App2 />
   </React.StrictMode>
 );
 
